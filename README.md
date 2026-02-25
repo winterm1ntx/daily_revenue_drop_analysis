@@ -18,9 +18,9 @@ Dataset dinyatakan layak untuk saya analisis.
 🔎 Analytical Approach
 1️⃣ Trend Validation
 Untuk menghindari kesalahan interpretasi akibat fluktuasi harian, digunakan:
-Day-over-Day (DoD) Growth
-Week-over-Week (WoW) Growth
-Rolling Average 7 hari
+Day-over-Day (DoD) Growth -- Pertumbuhan Harian
+Week-over-Week (WoW) Growth -- Pertumbuhan Mingguan
+Rolling Average 7 hari -- Digunakan untuk melihat trend revenue yang lebih stabil dalam 7 hari terakhir
 
 ---
 
