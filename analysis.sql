@@ -50,7 +50,7 @@ from customer_summary
 where date = date '2024-05-18'
 
 with city_summary as ( select* , round(case when lag(total_transaksi)over(partition by city order by date) = 0 then null
-else ( total_transaksi - lag(total_transaksi)over(partition by city order by date) ) *1.0 / lag(total_transaksi)over(partition by city order by date) * 100 end , 2 ) as payment_method_dod_growth
+else ( total_transaksi - lag(total_transaksi)over(partition by city order by date) ) *1.0 / lag(total_transaksi)over(partition by city order by date) * 100 end , 2 ) as city_dod_growth
 from (
 select date(date) as date , city , count(distinct transaction_id) as total_transaksi
 from retail_transactions
