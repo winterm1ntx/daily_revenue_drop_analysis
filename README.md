@@ -1,6 +1,6 @@
 📊 Daily Revenue Drop Analysis (April 18, 2024)
 📌 Business Problem
-Pada tanggal 18 April 2024 terjadi penurunan revenue dibandingkan hari sebelumnya.
+Pada tanggal 18 April 2024 terjadi penurunan revenue (-13.95%) dibandingkan hari sebelumnya, pada periode minggu sebelumnya juga menunjukkan pelemahan dan trend avg dalam 7 hari terakhir mengalami penurunan sehingga dapat dipastikan ini bukan noise.
 Analisis ini bertujuan untuk mengidentifikasi penyebab utama penurunan hari tersebut.
 
 ---
@@ -31,39 +31,42 @@ Revenue = Volume Order × AOV
 
 Hasil:
 Volume order turun signifikan ( 9% )
-AOV relatif stabil ( hanya turun 2% )
+AOV turun relatif moderat ( 4% )
 
 Kesimpulan awal: penurunan revenue dipicu oleh turunnya jumlah transaksi, bukan penurunan nilai pembelian.
 
 ---
 
 3️⃣ Customer Analysis
-Jumlah customer unik pada hari tersebut turun sejalan dengan volume order.
+Jumlah customer unik pada hari tersebut turun (9%) sejalan dengan volume order.
 Hal ini menunjukkan bahwa penurunan terjadi karena berkurangnya customer yang bertransaksi.
 
 ---
 
-4️⃣ Regional Breakdown
-Dilakukan analisis per kota untuk mengidentifikasi apakah penurunan bersifat menyeluruh atau lokal.
-
+4️⃣ Customer Segmentation
+Dilakukan analisis per customer type untuk mengidentifikasi apakah penurunan disebabkan oleh customer yang sudah ada atau bukan.
 Temuan:
-Kota Dallas mengalami penurunan paling tajam.
-Wilayah lain ada yang turun juga namun tidak setajam kota Dallas.
-Beberapa wilayah bahkan mencatat sedikit pertumbuhan positif
+New -0.84%
+Returning -11.59%
 
 ---
-🎯 Key Insight
-Penurunan revenue pada 18 April 2024 terutama disebabkan oleh penurunan volume transaksi yang terkonsentrasi di wilayah Dallas.
-Wilayah lain tidak menunjukkan penurunan signifikan.
 
-Hal ini mengindikasikan kemungkinan adanya faktor lokal, bukan penurunan demand secara keseluruhan.
+5️⃣ AOV per Segment
+Temuan:
+AoV New - 8.99%
+AoV Returning -4.09%
+
+• AOV Returning relatif stabil (penurunan moderat <5%)
+• AOV New turun lebih dalam, namun kontribusi terhadap total revenue lebih kecil dibanding Returning
+
+👉 Tidak terdapat indikasi pergeseran signifikan ke produk bernilai lebih rendah pada segment returning.
+
+---
+
+🎯 Key Insight
+Penurunan revenue pada 18 April 2024 terutama didorong oleh penurunan returning customer (-11.59%), sementara AOV hanya mengalami pelemahan moderat. Hal ini menunjukkan tekanan utama berada pada sisi retention, bukan perubahan signifikan dalam perilaku belanja.
 
 ---
 
 📌 Recommendation
-Perlu dilakukan validasi lebih lanjut terhadap operasional di wilayah Dallas sebelum mengambil keputusan strategis seperti perubahan harga atau intervensi marketing.
-
----
-
-📂 Files
-analysis.sql → Query lengkap analisis
+Mengingat penurunan didominasi oleh returning customer, fokus utama perbaikan sebaiknya diarahkan pada strategi retention dan engagement existing customer.
