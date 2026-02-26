@@ -9,7 +9,7 @@ Analisis ini bertujuan untuk mengidentifikasi penyebab utama penurunan hari ters
 Dataset terdiri dari 1.000.000 transaksi.
 
 Validasi yang dilakukan:
-Tidak ditemukan missing value pada kolom utama yang ingin saya analisis (date, transaction_id, total_items, total_cost, customer_name, city)
+Tidak ditemukan missing value pada kolom utama yang ingin saya analisis (date, transaction_id, total_cost, customer_name)
 
 Dataset dinyatakan layak untuk saya analisis.
 
